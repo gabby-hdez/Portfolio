@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(./images/world-outline-map.jpeg);
+    background-color: #cccccc;
+}
+  
+
+.header {
+    padding: 40px;
+    font-family: Copperplate, Papyrus, fantasy;
+    background-color: #a0522d;
+    color: #ffffff;
+    border: 4px solid #bc8f8f;
+}
+
+h1 {
+    display:inline-flex;
+    font-size: 48px;
+}
+
+.header nav ul li:hover {
+    background-color: #bc8f8f;
+    color:#ffffff;
+}
+  
+  .header nav ul li:focus {
+    outline: none;
+    border-color: #ffffff;
+  }
+
+.header nav{
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        font-family: Copperplate, Papyrus, fantasy;
+        font-size: 20px;
+    }
+
+.contact-me nav {
+        padding-top: 15px;
+        margin-right: 20px;
+        margin-top: -50px;
+        float: right;
+        font-family: Copperplate, Papyrus, fantasy;
+        font-size: 20px;
+    }
+.header nav ul, .contact-me nav ul {
+        list-style-type: none;
+    }
+    
+.header nav ul li, .contact-me nav ul li {
+        display: inline-block;
+        margin-left: 25px;
+        color: saddlebrown;
+        text-decoration: underline;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.content {
+    width: 70%;
+    display: inline-block;
+    margin-left: 300px;
+}
+
+h2{
+    width: 70%;
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: -150px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 50px;
+    color: #a0522d;
+}
+
+
+.about-me {
+    margin: 20px 20px 0 0;  
+    border: 3px solid #a0522d;
+    padding: 55px;
+    width: 100%;
+    height: 300px;
+    font-family: Copperplate, Papyrus, fantasy;
+    background-color: #bc8f8f;
+    color: #ffffff 
+}
+
+.pic img {
+    width: 200px;
+    margin-top: -40px;
+    float: left;
+    clear:left;
+}
+
+.post-pic {
+    width: 550px;
+    float:right;
+}
+
+.work{
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column;
+    flex: 0 0 2;
+    gap: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+
+
+}
+.surf-report{
+    flex-grow: 1;
+    padding: 100px;
+  width: 400px;
+  height: 100px;
+  text-align:center;
+  border: 4px solid #bc8f8f;
+  font-family: Copperplate, Papyrus, fantasy;
+  background-image: url(./images/beach.png)
+  
+}
+
+.surf-report:hover, .LED-wall:hover, .calculator:hover, .pastel-puzzle:hover, .run-buddy:hover {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+.LED-wall{
+    padding: 100px;
+    width: 400px;
+    height: 150px;
+    text-align:center;
+    border: 4px solid #bc8f8f;
+    font-family: Copperplate, Papyrus, fantasy;
+    background-image: url(./images/mountains-pic.jpeg)
+}
+
+.calculator{
+    padding: 50px;
+    width: 400px;
+    height: 200px;
+    text-align:center;
+    border: 4px solid #bc8f8f;
+    font-family: Copperplate, Papyrus, fantasy;
+    background-image: url(./images/forest-pic.jpeg);
+}
+
+.pastel-puzzle{
+    padding: 100px;
+    width: 400px;
+    height: 150px;
+    text-align:center;
+    border: 4px solid #bc8f8f;
+    font-family: Copperplate, Papyrus, fantasy;
+    background-image: url(./images/lake-picc.jpeg);
+}
+
+.run-buddy{
+    padding: 100px;
+    width: 400px;
+    height: 150px;
+    text-align:center;
+    border: 4px solid #bc8f8f;
+    font-family: Copperplate, Papyrus, fantasy;
+    background-image: url(./images/openroad-pic.jpeg);
+}
+
+.surf-report header, .LED-wall header, .calculator header, .pastel-puzzle header, .run-buddy header{
+    background-color: #bc8f8f;
+    color: #ffffff;
+    font-size: 20px;
+
+
+}
+
+.work p{
+    background-color: #bc8f8f;
+    color:saddlebrown;
+}
+
+.contact-me nav ul li:hover {
+    background-color: #bc8f8f;
+    color:#ffffff;
+}
+  
+.contact-me nav ul li:focus {
+    outline: none;
+    border-color: #ffffff;
+  }
+
+h4{
+    font-size: 30px;
+}
+.footer{
+    padding: 40px;
+    font-family: Copperplate, Papyrus, fantasy;
+    height: 30%;
+    background-color: #a0522d;
+    text-align: center;
+    color: #ffffff;
+    border: 4px solid #bc8f8f;
+}
+
+@media screen and (max-width: 768px) {
+    .header, main, .work, .footer {
+        flex-direction: column;
+        max-width: fit-content;
+    
+    }
+}
